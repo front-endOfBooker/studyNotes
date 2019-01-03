@@ -1,0 +1,50 @@
+<!-- 关键词: ::first-letter, ::first-line, ::before, ::after -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>伪元素</title>
+  <style>
+  p {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #dbdbdb;
+    font-size: 12px;
+    margin: 100px auto;
+  }
+  p::first-letter {
+    font-size: 22px;
+    color: red;
+    float: left;
+  }
+  p::first-line {
+    color: blueviolet;
+  }
+
+  #dog {
+    border: 1px solid #dbdbdb;
+    width: 200px;
+    padding: 10px;
+    color: red;
+    margin: 50px auto;
+  }
+  #dog::before {
+    /* content: url('./image/pic1.png'); */
+    content: '';
+    display: block;
+    z-index: 100;
+    width: 200px;
+    background-image: url('./image/pic1.png');
+    background-size: 200px;
+  }
+  </style>
+</head>
+<body>
+  <p>视觉格式化模型(visual formatting model)是用来处理文档并将它显示在视觉媒体上的机制，它也是CSS中的一个概念。
+      视觉格式化模型定义了盒（Box）的生成，盒主要包括了块盒、行内盒、匿名盒（没有名字不能被选择器选中的盒）以及一
+      些实验性的盒（未来可能添加到规范中）。盒的类型由display属性决定。</p>
+  <div id="dog">hello little_snow_hight</div>
+</body>
+</html>

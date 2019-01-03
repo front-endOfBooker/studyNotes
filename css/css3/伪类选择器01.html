@@ -1,0 +1,40 @@
+<!-- 关键词： :link, :active, :hover, :visited, :disabled, :enabled -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>伪类选择器</title>
+  <style>
+      #no1:link {
+        color: pink;
+      }
+      #no1:active {
+        color: blue;
+      }
+      #no1:hover {
+        color: orange;
+      }
+      #no1:visited {
+        color: greenyellow;
+      }
+
+      input:disabled {
+        border: 1px solid red;
+      }
+      input:enabled {
+        border: 1px solid rgb(26, 243, 26);
+      }
+      </style>
+</head>
+<body>
+  <!-- 动态伪类选择器 -->
+  <a id="no1" href="#">动态伪类选择器</a><br>
+
+  <!-- 元素状态伪类选择器 -->
+  <input type="text" disabled placeholder="元素状态伪类选择器"><br>
+  <input type="text" placeholder="元素状态伪类选择器">
+  
+</body>
+</html>

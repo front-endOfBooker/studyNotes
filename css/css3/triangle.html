@@ -1,0 +1,53 @@
+<!-- 关键词：三角形, 对话框 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>triangle</title>
+  <style>
+  .triangle {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    /* border-left: 50px solid pink; */
+    border-right: 50px solid orange;
+  }
+
+  .talk {
+    margin: 100px 50px;
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #6A6;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .talk::before {
+    content: '';
+    border-right: 10px solid #6A6;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    top: 15px;
+    left: -10px;
+  }
+  .talk > span {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    
+  }
+  </style>
+</head>
+<body>
+  <div class="triangle"></div>
+
+  <div class="talk">
+    <span>你好啊，我是会话框</span>
+  </div>
+</body>
+</html>
