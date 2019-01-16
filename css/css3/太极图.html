@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>太极图</title>
+  <style>
+  body {
+    background-color: #dbdbdb;
+  }
+  .taijitu {
+    margin: 100px auto;
+    width: 150px;
+    height: 300px;
+    background-color: #000;
+    border-right: 150px solid #fff;
+    border-radius: 150px;
+    position: relative;
+  }
+  .taijitu::before {
+    content: '';
+    width: 0;
+    height: 0;
+    background-color: #fff;
+    padding: 25px;
+    border: 50px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 75px;
+  }
+  .taijitu::after {
+    content: '';
+    width: 0;
+    height: 0;
+    background-color: #000;
+    padding: 25px;
+    border: 50px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 75px;
+  }
+  </style>
+</head>
+<body>
+  <div class="taijitu"></div>
+</body>
+</html>

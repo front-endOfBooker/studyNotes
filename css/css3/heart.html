@@ -4,8 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>heart</title>
+  <style>
+  .heart {
+    margin: 100px auto;
+    width: 0;
+    height: 0;
+    position: relative;
+  }
+  .heart::before {
+    content: '';
+    width: 100px;
+    height: 150px;
+    border-radius: 50px 50px 0 0;
+    background-color: red;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 35px;
+  }
+  .heart::after {
+    content: '';
+    width: 100px;
+    height: 150px;
+    border-radius: 50px 50px 0 0;
+    background-color: red;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 0;
+  }
+  </style>
 </head>
 <body>
+  <div class="heart"></div>
 </body>
 </html>
