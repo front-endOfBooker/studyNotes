@@ -1,3 +1,6 @@
 [submodule "readNotes"]
 	path = readNotes
 	url = git@github.com:front-endOfBooker/readNotes.git
+[submodule "project/little_project"]
+	path = project/little_project
+	url = git@github.com:front-endOfBooker/little_project.git
