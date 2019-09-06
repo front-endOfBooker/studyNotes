@@ -1,10 +1,19 @@
+# -*- coding: utf-8 -*-
+"""基金定投年化率.
+numpy, Anaconda
+"""
 import numpy as np
-# 环境
-# 1. python
-# 2. numpy, Anaconda
 
-# 基金定投年化率
-# params number-定投金额, 最终受益
-profile = np.irr([1000, 1000, 1000, -3111])
-print (profile)
-print(pow(profile+1, 24) - 1)
+def getProfile( profile_list, financial, n ):
+    """parmas
+    profile_list 定投金额list, type：list
+    financial 最终受益 type: int/float
+    n 定投周期(年份与周期比值, 如周期为半个月, n=24)
+    """
+    financial_list = profile_list + [financial]
+    item_profile = np.irr(financial_list) + 1
+    profile = pow(item_profile, n) - 1
+    return profile
+
+profile = getProfile([1000] * 3, -3111, 24)
+print(profile)
