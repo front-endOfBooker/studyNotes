@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """基金定投年化率.
 numpy, Anaconda
+$pip install numpy
 """
 import numpy as np
 
